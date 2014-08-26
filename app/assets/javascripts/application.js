@@ -48,7 +48,11 @@ $(document).ready(function () {
 
 
   $.each(gschoolDogs.dogs, function(){
-    $('table').append("<tr><td>" + this.owner + "</td><td>"+this.name +"</td><td>" + this.preferences[0].favoriteFood + "</td><td>" + this.preferences[1].favoriteToy + "</td></td></tr>");
+    $('table').append("<tr><td>" + this.owner + "</td><td>"
+      + this.name +"</td><td>"
+      + this.preferences[0].favoriteFood
+      + "</td><td>" + this.preferences[1].favoriteToy
+      + "</td></tr>");
   });
 
 
