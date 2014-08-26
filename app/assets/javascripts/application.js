@@ -38,12 +38,18 @@ $(document).ready(function () {
         "owner": "Evan",
         "name": "Trixie",
         "preferences": [
-          {"favoriteFood": "protien"},
+          {"favoriteFood": "protein"},
           {"favoriteToy": "weights"}
         ]
       }
     ]
   };
-  // Write come code to add the dogs to the table !!!!
+
+
+
+  $.each(gschoolDogs.dogs, function(){
+    $('table').append("<tr><td>" + this.owner + "</td></tr>");
+  });
+
 });
 
